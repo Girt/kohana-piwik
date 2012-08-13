@@ -46,18 +46,18 @@ Usage
 	
 
 	// Get Actions for Today
-	$data['actions' => Piwik::instance()->actions('day', 'today');
+	$data['actions'] => Piwik::instance()->actions('day', 'today');
 	// Get Actions for Last 10 Days
-	$data['actions' => Piwik::instance()->actions('day', 10);
+	$data['actions'] => Piwik::instance()->actions('day', 10);
 	// Get Actions for Last 6 months
-	$data['actions' => Piwik::instance()->actions('month', 6);
+	$data['actions'] => Piwik::instance()->actions('month', 6);
     
 	// Get Today's 20 Last Visitors
-	$data['visitors' => Piwik::instance()->last_visits('today', 20);
+	$data['visitors'] => Piwik::instance()->last_visits('today', 20);
 
 	// Get Today's Last 20 Visitors Formatted 
 	// Eliminates needs from parsing whats returned from the last_visits function, does GeoIP lookup if enabled
-	$data['visitors' => Piwik::instance()->last_visits_parsed('today', 20);
+	$data['visitors'] => Piwik::instance()->last_visits_parsed('today', 20);
 
 	// If GeoIP enabled, and you want to get geoip information, pass it an IP Address
 	$geoip = Piwik::instance()->get_geoip('127.0.0.1');
